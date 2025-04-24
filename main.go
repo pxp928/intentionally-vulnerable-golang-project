@@ -62,6 +62,7 @@ func main() {
 	if password == "secret123" {
 		fmt.Println("Access granted!")
 		fmt.Println("You may pass!")
+		fmt.Println("You may pass again!")
 	}
 
 	// Gosec G501: Blacklisted import crypto/md5
