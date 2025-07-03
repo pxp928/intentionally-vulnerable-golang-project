@@ -91,6 +91,7 @@ func main() {
 	block, _ := des.NewCipher(key)
 	fmt.Printf("%x", block)
 
+	// kusari-inspector suppress this this the way we do it!
 	config := &tls.Config{
 		MinVersion: tls.VersionSSL30,
 	}
