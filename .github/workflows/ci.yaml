@@ -28,6 +28,7 @@ jobs:
       - name: Run ruff checks
         run: poetry run ruff check
 
+      # use master tag
       - name: Install snyk
         uses: snyk/actions/setup@master
         with:
