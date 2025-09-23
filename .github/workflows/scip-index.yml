@@ -23,6 +23,11 @@ jobs:
         fetch-depth: 0
         persist-credentials: false
 
+    - name: Fetch base branch for PR comparison
+      if: github.event_name == 'pull_request'
+      run: |
+        git fetch origin ${{ github.event.pull_request.base.ref }}:${{ github.event.pull_request.base.ref }}
+
     - name: Verify SCIP tools
       run: |
         echo "=== Verifying pre-installed SCIP tools ==="
