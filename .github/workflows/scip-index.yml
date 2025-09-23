@@ -1,0 +1,45 @@
+name: Generate SCIP Indexes (Docker)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: [ main, develop ]
+  workflow_dispatch:
+
+# Add this permissions block
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  generate-scip-indexes:
+    runs-on: ubuntu-latest
+    container:
+      image: ttl.sh/kusari-indexer:latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        persist-credentials: false
+
+    - name: Verify SCIP tools
+      run: |
+        echo "=== Verifying pre-installed SCIP tools ==="
+        scip-go --help
+        scip-typescript --help
+        scip-python --help
+        scip-java --help
+        echo "✅ All SCIP tools are ready!"
+    
+    - name: Generate SCIP indexes
+      id: scip
+      uses: kusari-sandbox/kusari-indexer@v0.1.3
+
+    - name: Process results
+      run: |
+        echo "Projects processed: ${{ steps.scip.outputs.success-count }}"
+        echo "Total projects found: ${{ steps.scip.outputs.total-count }}"
+        if [[ "${{ steps.scip.outputs.skipped }}" == "true" ]]; then
+          echo "Processing was skipped - no changes detected"
+        fi
