@@ -23,11 +23,6 @@ jobs:
         fetch-depth: 0
         persist-credentials: false
 
-    - name: Fetch base branch for PR comparison
-      if: github.event_name == 'pull_request'
-      run: |
-        git fetch origin ${{ github.event.pull_request.base.ref }}:${{ github.event.pull_request.base.ref }}
-
     - name: Verify SCIP tools
       run: |
         echo "=== Verifying pre-installed SCIP tools ==="
@@ -39,4 +34,4 @@ jobs:
     
     - name: Generate SCIP indexes
       id: scip
-      uses: kusari-sandbox/kusari-indexer@v0.1.6
+      uses: kusari-sandbox/kusari-indexer@v0.1.9
