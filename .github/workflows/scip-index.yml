@@ -34,12 +34,4 @@ jobs:
     
     - name: Generate SCIP indexes
       id: scip
-      uses: kusari-sandbox/kusari-indexer@v0.1.3
-
-    - name: Process results
-      run: |
-        echo "Projects processed: ${{ steps.scip.outputs.success-count }}"
-        echo "Total projects found: ${{ steps.scip.outputs.total-count }}"
-        if [[ "${{ steps.scip.outputs.skipped }}" == "true" ]]; then
-          echo "Processing was skipped - no changes detected"
-        fi
+      uses: kusari-sandbox/kusari-indexer@v0.1.4
