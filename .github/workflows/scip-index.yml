@@ -3,7 +3,7 @@ name: Generate SCIP Indexes (Docker)
 on:
   pull_request:
     types: [opened, synchronize, reopened]
-    branches: [ main, develop ]
+    branches: [ main, master, develop ]
   workflow_dispatch:
 
 # Add this permissions block
