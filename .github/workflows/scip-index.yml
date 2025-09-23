@@ -34,5 +34,4 @@ jobs:
     
     - name: Generate SCIP indexes
       id: scip
-      uses: kusari-sandbox/kusari-indexer@v0.1.5
-
+      uses: kusari-sandbox/kusari-indexer@v0.1.6
