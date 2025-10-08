@@ -23,15 +23,11 @@ jobs:
         fetch-depth: 0
         persist-credentials: false
 
-    - name: Verify SCIP tools
-      run: |
-        echo "=== Verifying pre-installed SCIP tools ==="
-        scip-go --help
-        scip-typescript --help
-        scip-python --help
-        scip-java --help
-        echo "✅ All SCIP tools are ready!"
-    
     - name: Generate SCIP indexes
       id: scip
-      uses: kusari-sandbox/kusari-indexer@v0.1.9
+      uses: kusari-sandbox/kusari-indexer@v0.1.11
+      with:
+          kusari-client-id: ${{ secrets.KUSARI_CLIENT_ID }}
+          kusari-client-secret: ${{ secrets.KUSARI_CLIENT_SECRET }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
