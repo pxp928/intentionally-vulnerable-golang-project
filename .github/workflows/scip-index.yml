@@ -25,7 +25,7 @@ jobs:
 
     - name: Generate SCIP indexes
       id: scip
-      uses: kusari-sandbox/kusari-indexer@v0.1.13
+      uses: kusari-sandbox/kusari-indexer@v0.1.14
       with:
           kusari-client-id: ${{ secrets.KUSARI_CLIENT_ID }}
           kusari-client-secret: ${{ secrets.KUSARI_CLIENT_SECRET }}
