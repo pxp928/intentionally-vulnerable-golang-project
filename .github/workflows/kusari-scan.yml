@@ -1,0 +1,18 @@
+name: Kusari Security Scan
+
+on:
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  kusari-scan:
+    uses: kusaridev/kusari-ci-templates/.github/workflows/kusari-scan-v1.yml@v1
+    permissions:
+      contents: read
+      pull-requests: write  # Required for PR comments
+    secrets:
+      KUSARI_CLIENT_ID: ${{ secrets.KUSARI_CLIENT_ID }}
+      KUSARI_CLIENT_SECRET: ${{ secrets.KUSARI_CLIENT_SECRET }}
+    with:
+      fail_on_issues: false  # Optional: fail workflow on security issues
+      post_comment: true     # Optional: post results as PR comment
