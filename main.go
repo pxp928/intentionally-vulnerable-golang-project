@@ -19,6 +19,9 @@ import (
 	"github.com/go-gitea/gitea/modules/markup"
 	"github.com/gophish/gophish/config"
 	"golang.org/x/crypto/md4"
+
+	_ "github.com/go-git/go-git/v5"
+	_ "github.com/google/osv-scalibr"
 )
 
 var validConfig = []byte(`{
