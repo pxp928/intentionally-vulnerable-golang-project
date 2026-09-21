@@ -8,3 +8,6 @@ dependencies, and as well showing a small example of how to use it in Travis-CI 
 Project is currently setup to use both `dep` and `go mod` so you should be able to use either one. 
 
 To see how `nancy` will output when finding vulnerabilities, check out [this build on Travis-CI](https://travis-ci.org/github/sonatype-nexus-community/intentionally-vulnerable-golang-project/builds/671448888) or [this build on CircleCI](https://circleci.com/gh/sonatype-nexus-community/intentionally-vulnerable-golang-project/26)
+
+P2 dual-write test 2026-09-21T19:23:53Z
+P2 dual-write test (synchronize) 19:24:29Z
