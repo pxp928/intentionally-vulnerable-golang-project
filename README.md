@@ -14,3 +14,5 @@ P2 dual-write test (synchronize) 19:24:29Z
 
 P3 envelope test 2026-09-22T17:55:32Z
 P3 envelope test (synchronize) 17:55:49Z
+
+W3 clone test 2026-09-22T18:25:11Z
