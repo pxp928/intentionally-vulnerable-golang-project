@@ -10,3 +10,5 @@ Project is currently setup to use both `dep` and `go mod` so you should be able 
 To see how `nancy` will output when finding vulnerabilities, check out [this build on Travis-CI](https://travis-ci.org/github/sonatype-nexus-community/intentionally-vulnerable-golang-project/builds/671448888) or [this build on CircleCI](https://circleci.com/gh/sonatype-nexus-community/intentionally-vulnerable-golang-project/26)
 
 Inspector commit-delta test 2026-09-16T20:42:06Z.
+
+T1 forgeread scan test 2026-09-25T17:00:24Z
