@@ -26,3 +26,5 @@ P5 dispatch test (synchronize) 19:56:30Z
 
 Fanout regression test 2026-09-25T01:31:51Z
 Fanout regression test (synchronize) 01:32:48Z
+
+T1 forgeread merge test 2026-09-25T17:07:27Z
