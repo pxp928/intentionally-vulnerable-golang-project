@@ -23,3 +23,6 @@ W4 reader test (synchronize) 15:58:19Z
 
 P5 dispatch test 2026-09-23T19:55:42Z
 P5 dispatch test (synchronize) 19:56:30Z
+
+Fanout regression test 2026-09-25T01:31:51Z
+Fanout regression test (synchronize) 01:32:48Z
