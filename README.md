@@ -12,3 +12,4 @@ To see how `nancy` will output when finding vulnerabilities, check out [this bui
 Inspector commit-delta test 2026-09-16T20:42:06Z.
 
 T1 forgeread scan test 2026-09-25T17:00:24Z
+T1 forgeread scan test (synchronize) 17:06:20Z
