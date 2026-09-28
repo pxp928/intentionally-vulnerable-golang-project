@@ -12,3 +12,4 @@ To see how `nancy` will output when finding vulnerabilities, check out [this bui
 Inspector commit-delta test 2026-09-16T20:42:06Z.
 
 T3 bundle scan test 2026-09-28T15:56:13Z
+T3 bundle scan test (diagnostics) 16:16:00Z
