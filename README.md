@@ -28,3 +28,5 @@ Fanout regression test 2026-09-25T01:31:51Z
 Fanout regression test (synchronize) 01:32:48Z
 
 T1 forgeread merge test 2026-09-25T17:07:27Z
+
+T2c merged-PR SBOM bundle test 2026-09-28T14:31:16Z
