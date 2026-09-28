@@ -32,3 +32,5 @@ T1 forgeread merge test 2026-09-25T17:07:27Z
 T2c merged-PR SBOM bundle test 2026-09-28T14:31:16Z
 
 T3 merged-PR SBOM bundle test 2026-09-28T15:56:17Z
+
+T3 merged-PR SBOM bundle test (presign fix) 2026-09-28T16:32:30Z
