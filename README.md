@@ -13,3 +13,4 @@ Inspector commit-delta test 2026-09-16T20:42:06Z.
 
 T3 bundle scan test 2026-09-28T15:56:13Z
 T3 bundle scan test (diagnostics) 16:16:00Z
+T3 bundle scan test (presign fix) 16:24:13Z
