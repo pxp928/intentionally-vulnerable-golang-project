@@ -5,7 +5,7 @@ go 1.25.5
 require (
 	github.com/go-gitea/gitea v1.2.3
 	github.com/gophish/gophish v0.1.2
-	github.com/gorilla/websocket v1.4.0
+	github.com/gorilla/websocket v1.4.1
 	golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
 )
 
